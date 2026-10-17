@@ -8,7 +8,8 @@ namespace RandomCharactersGenerator
      *  Essentially this is the "blank slate" on which we write values on later.
      *  A constructor shall make sure that we may copy the basic set of properties for later usage.
      
-     This class would likely have been called a character sheet or */
+     This class would likely have been called a "character sheet" or "stat block" in a D&D-game,
+    however I chose a more straightforward name that would be communicative for non-RPG-players.*/
     internal class Character
     {
         //Here we shall put properties that may be inherited by other character classes.
