@@ -19,6 +19,10 @@ namespace RandomCharactersGenerator
         //This property shall be more strength focused.
         private string warrior = "warrior";
 
-        
+        //This method chooses a profession for the character.
+        public string ChooseProfession(Character character)
+        {
+            
+        }
     }
 }
