@@ -39,6 +39,17 @@ namespace RandomCharactersGenerator
         public Character (string name, string profession, string specialAbility, int strength, int dexterity, int healthPoints )
         {
             //Here we shall use the "this" method for accessing our private variables.
+            this.name = name;
+
+            this.profession = profession;
+
+            this.specialAbility = specialAbility;
+
+            this.strength = strength;
+
+            this.dexterity = dexterity;
+
+            this.healthPoints = healthPoints;
         }
     }
 }
