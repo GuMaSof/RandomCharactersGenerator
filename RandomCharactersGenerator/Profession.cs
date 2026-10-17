@@ -13,5 +13,12 @@ namespace RandomCharactersGenerator
         /*Vi choose a minimal number of professions for the sake of simplicity,
          * at least right now. A project easily grows too big,
          * and impossible to complete by your deadline if you are ambitious in your goals from the start.*/
+
+        //This property shall be more dexterity focused.
+        private string thief = "thief";
+        //This property shall be more strength focused.
+        private string warrior = "warrior";
+
+        
     }
 }
