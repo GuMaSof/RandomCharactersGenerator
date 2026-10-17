@@ -18,5 +18,7 @@ namespace RandomCharactersGenerator
          * but in this case I have chosen to write it in full as if someone that lacks experience of RPGs was reading my code.*/
         private int healthPoints;
         private string specialAbility;
+
+        //Copying Constructor that shall fulfill the purpose of this class as a blank slate that contains the values of many individual characters.
     }
 }
