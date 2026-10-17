@@ -27,7 +27,6 @@ namespace RandomCharactersGenerator
         /*In the typical RPG you could communicate health points with just the acronym 'HP',
          * but in this case I have chosen to write it in full as if someone that lacks experience of RPGs was reading my code.*/
         private int healthPoints;
-        
 
         //Copying Constructor that shall fulfill the purpose of this class as a blank slate that contains the values of many individual characters.
     }
