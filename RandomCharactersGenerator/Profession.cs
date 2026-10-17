@@ -6,7 +6,7 @@ namespace RandomCharactersGenerator
 {
     /*This would have been called 'class' if this were an actual RPG,
      * but we must avoid confusion in our naming habits.*/
-    internal class Profession : Character
+    internal class Profession
     {
 
     }
