@@ -6,12 +6,14 @@ namespace RandomCharactersGenerator
 {
     /*The purpose of the Character class is to be an container of properties that may be copied.
      *  Essentially this is the "blank slate" on which we write values on later.
-     *  A constructor shall make sure that we may copy the basic set of properties for later usage.*/
+     *  A constructor shall make sure that we may copy the basic set of properties for later usage.
+     
+     This class would likely have been called a character sheet or */
     internal class Character
     {
         //Here we shall put properties that may be inherited by other character classes.
 
-        /*The name-property will have it's own class for generating values, because there far too much content for just this one class.
+        /*The name-property will have it's own class for generating values, because there are far too much content for just this one class.
          * It would far more clean, and easy to read if I divide the code into various classes by category of process of generation of values.*/
         private string name;
         /*The profession-property shall have it's own class for generation and applying values to this property.
