@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RandomCharactersGenerator
 {
-    /*The purpose of the Character class is to be an container of properties that may be copied.
+    /*The purpose of the Character class is to be a container of properties that may be copied.
      *  Essentially this is the "blank slate" on which we write values on later.
      *  It's far more clean, and easy to read if I divide the code into various classes by category of process of generation of values.
      *  
