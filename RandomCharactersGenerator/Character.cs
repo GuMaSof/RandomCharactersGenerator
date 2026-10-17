@@ -4,7 +4,9 @@ using System.Text;
 
 namespace RandomCharactersGenerator
 {
-    //This will be an upper class from which other classes, like 'profession' will inherit.
+    /*The purpose of the Character class is to be an container of properties that may be copied.
+     *  Essentially this is the "blank slate" on which we write values on later.
+     *  A constructor shall make sure that we may copy the basic set of properties for later usage.*/
     internal class Character
     {
         //Here we shall put properties that may be inherited by other character classes.
