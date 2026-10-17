@@ -29,5 +29,9 @@ namespace RandomCharactersGenerator
         private int healthPoints;
 
         //Copying Constructor that shall fulfill the purpose of this class as a blank slate that contains the values of many individual characters.
+        public Character (string name, string profession, string specialAbility, int strength, int dexterity, int healthPoints )
+        {
+
+        }
     }
 }
