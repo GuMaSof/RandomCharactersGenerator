@@ -18,8 +18,8 @@ namespace RandomCharactersGenerator
          * It would far more clean, and easy to read if I divide the code into various classes by category of process of generation of values.*/
         private string name;
         /*The profession-property shall have it's own class for generation and applying values to this property.
-         * It would be far too much content for just one class to carry all of the logic.*/ 
-
+         * It would be far too much content for just one class to carry all of the logic.*/
+        private string profession;
         private string specialAbility;
         //Strength and dexterity shall be represented by integer values, just like in a typical RPG-stat block.
         private int strength;
