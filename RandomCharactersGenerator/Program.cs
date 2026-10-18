@@ -4,7 +4,8 @@
     {
         public static void Main (string[] args )
         {
-            //Here we are going to put many methods from other classes.
+            //List of characters here.
+            List<Character> characterList = new List<Character>();
         }
     }
 }
