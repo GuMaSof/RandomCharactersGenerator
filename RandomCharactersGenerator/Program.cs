@@ -62,21 +62,29 @@
                             Character character = new Character(newName, newProfession, newSpecialAbility, newStrength, newDexterity, newHP);
                             characterList.Add(character);
 
-                            Console.WriteLine("Karaktärens namn är " + newName + ".");
-                            Console.WriteLine("Karaktärens yrke är " + newProfession + ".");
-                            Console.WriteLine("Karaktärens specialförmåga är " + newSpecialAbility + ".");
+                            Console.WriteLine(newName);
+                            Console.WriteLine(newProfession);
+                            Console.WriteLine(newSpecialAbility);
 
-                            Console.WriteLine("Karaktärens styrka är " + newStrength + ".");
-                            Console.WriteLine("Karaktärens snabbhet är " + newDexterity + ".");
-                            Console.WriteLine("Karaktärens hälsopoäng är " + newHP + ".");
+                            Console.WriteLine(newStrength);
+                            Console.WriteLine(newDexterity);
+                            Console.WriteLine(newHP);
                             break;
 
                         case 2:
+                            //Security measure to prevent the loop from running if there are no elements in the list.
                             if (characterList.Count > 0)
                             {
+                                //Loop that goes through the entire list of characters.
                                 foreach (var Character in characterList)
                                 {
-                                    Console.WriteLine();
+                                    Console.WriteLine(Character.GetName() );
+                                    Console.WriteLine(Character.GetProfession() );
+                                    Console.WriteLine(Character.GetSpecialAbility() );
+
+                                    Console.WriteLine(Character.GetStrength() );
+                                    Console.WriteLine(Character.GetDexterity() );
+                                    Console.WriteLine(Character.GetHealthPoints() );
                                 }
                             }
                             else
