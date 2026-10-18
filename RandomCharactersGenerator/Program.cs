@@ -46,9 +46,9 @@
                     switch (convertedInput)
                     {
                         case 1:
-                            naming.GenerateName(newName);
+                            newName = naming.GenerateName();
 
-                            stats.GenerateStrength(newStrength);
+                            newStrength = stats.GenerateStrength();
                             stats.GenerateDexterity(newDexterity);
 
                             profession.ChooseProfession()
