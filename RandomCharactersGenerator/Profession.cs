@@ -97,6 +97,8 @@ namespace RandomCharactersGenerator
             else
             {
                 Console.WriteLine("Error! Property not found.");
+                Console.WriteLine("We default to thief health points.");
+                healthPoints = random.Next(1, 5);
                 return healthPoints;
             }
         }

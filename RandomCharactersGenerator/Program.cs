@@ -46,18 +46,40 @@
                     switch (convertedInput)
                     {
                         case 1:
-                            newName = naming.GenerateName();
+                            newName = naming.GenerateName(); //Making name.
 
+                            //Stats.
                             newStrength = stats.GenerateStrength();
                             newDexterity = stats.GenerateDexterity();
 
+                            //Choosing profession based on stats.
                             newProfession = profession.ChooseProfession(newStrength, newDexterity);
+
+                            //Choosing special ability and health points based on profession.
                             newSpecialAbility = profession.ChooseSpecialAbility(newProfession);
                             newHP = profession.ChooseHP(newProfession);
+
+                            Character character = new Character(newName, newProfession, newSpecialAbility, newStrength, newDexterity, newHP);
+                            characterList.Add(character);
+
+                            Console.WriteLine("Karaktärens namn är " + newName + ".");
+                            Console.WriteLine("Karaktärens yrke är " + newProfession + ".");
+                            Console.WriteLine("Karaktärens specialförmåga är " + newSpecialAbility + ".");
+
+                            Console.WriteLine("Karaktärens styrka är " + newStrength + ".");
+                            Console.WriteLine("Karaktärens snabbhet är " + newDexterity + ".");
+                            Console.WriteLine("Karaktärens hälsopoäng är " + newHP + ".");
                             break;
                         case 2:
+                            if (characterList.Count > 0)
+                            {
+                                foreach
+                            }
+                            else
                             break;
                         case 3:
+                            Console.WriteLine("Hejdå!");
+                            menuBool = false;
                             break;
                     }
                 }
