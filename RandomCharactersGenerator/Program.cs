@@ -51,7 +51,8 @@
                             newStrength = stats.GenerateStrength();
                             newDexterity = stats.GenerateDexterity();
 
-                            profession.ChooseProfession(newStrength, newDexterity);
+                            newProfession = profession.ChooseProfession(newStrength, newDexterity);
+                            newSpecialAbility = profession.ChooseSpecialAbility(newProfession, )
                             break;
                         case 2:
                             break;

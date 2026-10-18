@@ -59,8 +59,9 @@ namespace RandomCharactersGenerator
         }
 
         //Chooses special ability for the character.
-        public string ChooseSpecialAbility(string profession, string specialAbility)
+        public string ChooseSpecialAbility(string profession)
         {
+            string specialAbility;
             if ( profession == thief)
             {
                 specialAbility = thiefAbility;
