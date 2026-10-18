@@ -31,16 +31,15 @@
             //Here we begin to establish our menu structure.
             while (menuBool == true)
             {
-                //It eventually gets messy when you have a menu structure unless you clear the console regularly.
-                Console.Clear();
-
                 Console.WriteLine("Välkommen till karaktärsgeneratorn!");
                 Console.WriteLine("Tryck [1] För att generera en ny karaktär.");
 
-                Console.WriteLine("Tryck [2] För att välja en karaktär.");
+                Console.WriteLine("Tryck [2] För att se alla karaktärer.");
                 Console.WriteLine("Tryck [3] För att stänga av menyn.");
+
                 //Here we insert the user input.
                 unConvertedInput = Console.ReadLine();
+
                 if (int.TryParse(unConvertedInput, out convertedInput) )
                 {
                     switch (convertedInput)
@@ -62,13 +61,13 @@
                             Character character = new Character(newName, newProfession, newSpecialAbility, newStrength, newDexterity, newHP);
                             characterList.Add(character);
 
-                            Console.WriteLine(newName);
-                            Console.WriteLine(newProfession);
-                            Console.WriteLine(newSpecialAbility);
+                            Console.WriteLine("Karaktärens namn är " + newName + ".");
+                            Console.WriteLine(newName + "s yrke är " + newProfession + ".");
+                            Console.WriteLine(newName + "s specialförmåga är " + newSpecialAbility + ".");
 
-                            Console.WriteLine(newStrength);
-                            Console.WriteLine(newDexterity);
-                            Console.WriteLine(newHP);
+                            Console.WriteLine(newName + "s styrka är " + newStrength + ".");
+                            Console.WriteLine(newName + "s snabbhet är " +  newDexterity + ".");
+                            Console.WriteLine(newName + "s hälsopoäng är " + newHP + ".");
                             break;
 
                         case 2:
@@ -78,13 +77,13 @@
                                 //Loop that goes through the entire list of characters.
                                 foreach (var Character in characterList)
                                 {
-                                    Console.WriteLine(Character.GetName() );
-                                    Console.WriteLine(Character.GetProfession() );
-                                    Console.WriteLine(Character.GetSpecialAbility() );
+                                    Console.WriteLine("Karaktärens namn är " + Character.GetName() + ".");
+                                    Console.WriteLine(Character.GetName() + "s yrke är " + Character.GetProfession() + ".");
+                                    Console.WriteLine(Character.GetName() + "s specialförmåga är " + Character.GetSpecialAbility() + ".");
 
-                                    Console.WriteLine(Character.GetStrength() );
-                                    Console.WriteLine(Character.GetDexterity() );
-                                    Console.WriteLine(Character.GetHealthPoints() );
+                                    Console.WriteLine(Character.GetName() + "s styrka är " + Character.GetStrength() + ".");
+                                    Console.WriteLine(Character.GetName() + "s snabbhet är " + Character.GetDexterity() + ".");
+                                    Console.WriteLine(Character.GetName() + "s hälsopoäng är " + Character.GetHealthPoints() + ".");
                                 }
                             }
                             else
