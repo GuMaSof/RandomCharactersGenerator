@@ -10,7 +10,7 @@ namespace RandomCharactersGenerator
      * but we must avoid confusion in our naming habits, for the word "class" is already used in a different context in C#.*/
     internal class Profession
     {
-        /*Vi choose a minimal number of professions for the sake of simplicity,
+        /*I've chosen a minimal number of professions for the sake of simplicity,
          * at least right now. A project easily grows too big,
          * and impossible to complete by your deadline if you are ambitious in your goals from the start.*/
 
