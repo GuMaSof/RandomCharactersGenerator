@@ -42,8 +42,8 @@ namespace RandomCharactersGenerator
             else
             {
                 //If dexterity and strength happen to be tied then we shall profession be randomly selected.
-                i = random.Next(0, 2);
-                if (i > 0)
+                i = random.Next(1, 2);
+                if (i > 1)
                 {
                     profession = warrior;
                     return profession;
