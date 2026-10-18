@@ -18,6 +18,8 @@ namespace RandomCharactersGenerator
         private string thief = "thief";
         //This property shall be more strength focused.
         private string warrior = "warrior";
+        private string inputString;
+        private int inputInteger;
 
         //This method chooses a profession for the character.
         public string ChooseProfession(Character character)
