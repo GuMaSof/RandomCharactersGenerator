@@ -51,5 +51,36 @@ namespace RandomCharactersGenerator
 
             this.healthPoints = healthPoints;
         }
+
+        //GetName
+        public string GetName()
+        {
+            return name;
+        }
+        //GetProfession
+        public string GetProfession()
+        {
+            return profession;
+        }
+        //GetSpecialAbility
+        public string GetSpecialAbility()
+        {
+            return specialAbility;
+        }
+        //GetStrength
+        public int GetStrength()
+        {
+            return strength;
+        }
+        //GetDexterity
+        public int GetDexterity()
+        {
+            return dexterity;
+        }
+        //GetHealthPoints
+        public int GetHealthPoints()
+        {
+            return healthPoints;
+        }
     }
 }
