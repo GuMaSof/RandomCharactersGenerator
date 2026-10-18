@@ -18,9 +18,9 @@ namespace RandomCharactersGenerator
         I decided to not be ambitious for ambitious projects often don't get done on time, from my experience.*/
 
         //Here we have prefixes for the various names that we may assign to characters.
-        private List<string> prefixes = new List<string>();
-        //Here we have the suffix list
-        private List<string> suffixes = new List<string>();
+        private string[] prefixes = new string[] { "Ke", "Sa", "Nyr", "Yra", "Bel", "Ul", "Mar", "Yni", "Or", "Era"};
+        //Here we have the suffix array
+        private string[] suffixes = new string[] { "naron", "kar", "ildar", "varon", "xar", "diel", "mir", "gon"};
 
         //Creation of an object of the Random class for establishing groundwork for randomly generated processes.
         Random random = new Random();
