@@ -26,7 +26,7 @@
             //Containers of integers for adding values to characters.
             int newStrength;
             int newDexterity;
-            int healthPoints;
+            int newHP;
 
             //Here we begin to establish our menu structure.
             while (menuBool == true)
@@ -52,7 +52,8 @@
                             newDexterity = stats.GenerateDexterity();
 
                             newProfession = profession.ChooseProfession(newStrength, newDexterity);
-                            newSpecialAbility = profession.ChooseSpecialAbility(newProfession, )
+                            newSpecialAbility = profession.ChooseSpecialAbility(newProfession);
+                            newHP = profession.ChooseHP(newProfession);
                             break;
                         case 2:
                             break;

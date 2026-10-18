@@ -80,8 +80,10 @@ namespace RandomCharactersGenerator
         }
 
         //Chooses number of health points based on profession. We are going with the old-school rules that gives less health points.
-        public int ChooseHP(string profession, int healthPoints)
+        public int ChooseHP(string profession)
         {
+            int healthPoints;
+
             if (profession == thief)
             {
                 healthPoints = random.Next(1, 5);
