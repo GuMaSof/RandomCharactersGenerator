@@ -6,6 +6,8 @@ namespace RandomCharactersGenerator
 {
     internal class StatsGenerator
     {
+        Random random = new Random();
+
 
     }
 }

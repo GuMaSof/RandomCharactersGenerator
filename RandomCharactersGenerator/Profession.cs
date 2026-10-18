@@ -18,8 +18,10 @@ namespace RandomCharactersGenerator
         private string thief = "thief";
         //This profession shall be more strength focused.
         private string warrior = "warrior";
+        //Special abilities.
         private string warriorAbility = "Shield bash";
         private string thiefAbility = "Lockpick";
+        
         Random random = new Random();
 
         //This method chooses a profession for the character.
@@ -73,6 +75,26 @@ namespace RandomCharactersGenerator
             {
                 specialAbility = "Error! Property not found.";
                 return specialAbility;
+            }
+        }
+
+        //Chooses number of health points based on profession. We are going with the old-school rules that gives less health points.
+        public int ChooseHP(string profession, int healthPoints)
+        {
+            if (profession == thief)
+            {
+                healthPoints = random.Next(1, 5);
+                return healthPoints;
+            }
+            else if (profession == warrior)
+            {
+                healthPoints = random.Next(1, 7);
+                return healthPoints;
+            }
+            else
+            {
+                Console.WriteLine("Error! Property not found.");
+                return healthPoints;
             }
         }
     }
