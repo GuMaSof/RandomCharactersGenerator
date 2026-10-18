@@ -19,14 +19,14 @@
             int convertedInput;
 
             //Containers of strings for adding values to characters.
-            string newName = null;
-            string newProfession = null;
-            string newSpecialAbility = null;
+            string newName;
+            string newProfession;
+            string newSpecialAbility;
 
             //Containers of integers for adding values to characters.
-            int newStrength = 0;
-            int newDexterity = 0;
-            int healthPoints = 0;
+            int newStrength;
+            int newDexterity;
+            int healthPoints;
 
             //Here we begin to establish our menu structure.
             while (menuBool == true)
@@ -49,7 +49,7 @@
                             newName = naming.GenerateName();
 
                             newStrength = stats.GenerateStrength();
-                            stats.GenerateDexterity(newDexterity);
+                            newDexterity = stats.GenerateDexterity();
 
                             profession.ChooseProfession()
                             break;
