@@ -25,9 +25,9 @@ namespace RandomCharactersGenerator
         Random random = new Random();
 
         //This method chooses a profession for the character.
-        public string ChooseProfession(int strength, int dexterity, int i, string profession)
+        public string ChooseProfession(int strength, int dexterity)
         {
-            
+            string profession;
             //We will choose profession by looking at which property is higher.
             if (strength > dexterity)
             {
@@ -44,7 +44,7 @@ namespace RandomCharactersGenerator
             else
             {
                 //If dexterity and strength happen to be tied then we shall profession be randomly selected.
-                i = random.Next(1, 2);
+                int i = random.Next(1, 2);
                 if (i > 1)
                 {
                     profession = warrior;
