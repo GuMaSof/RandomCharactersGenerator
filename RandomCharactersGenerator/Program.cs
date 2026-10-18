@@ -24,9 +24,9 @@
             string newSpecialAbility;
 
             //Containers of integers for adding values to characters.
-            int newStrength;
-            int newDexterity;
-            int healthPoints;
+            int newStrength = 0;
+            int newDexterity = 0;
+            int healthPoints = 0;
 
             //Here we begin to establish our menu structure.
             while (menuBool == true)
@@ -46,6 +46,9 @@
                     switch (convertedInput)
                     {
                         case 1:
+                            naming.GenerateName()
+                            stats.GenerateStrength(newStrength);
+                            stats.GenerateDexterity(newDexterity);
                             break;
                         case 2:
                             break;
