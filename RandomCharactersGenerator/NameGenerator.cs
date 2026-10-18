@@ -25,14 +25,14 @@ namespace RandomCharactersGenerator
         //Creation of an object of the Random class for establishing groundwork for randomly generated processes.
         Random random = new Random();
         //Method for creating names by combining prefixes and suffixes.
-        public string GenerateName(string name )
+        public string GenerateName( )
         {
             //Usage of the random object for the purpose of randomly selecting elements in the arrays.
             int i = random.Next(prefixes.Length);
             int j = random.Next(suffixes.Length);
 
             //Here we actually combine the prefixes and suffixes, as Copilot suggested.
-            name = prefixes[i] + suffixes[j];
+            string name = prefixes[i] + suffixes[j];
             
             return name;//Here we finally return the name after the process is done.
         }

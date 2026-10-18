@@ -19,9 +19,9 @@
             int convertedInput;
 
             //Containers of strings for adding values to characters.
-            string newName;
-            string newProfession;
-            string newSpecialAbility;
+            string newName = null;
+            string newProfession = null;
+            string newSpecialAbility = null;
 
             //Containers of integers for adding values to characters.
             int newStrength = 0;
@@ -46,9 +46,12 @@
                     switch (convertedInput)
                     {
                         case 1:
-                            naming.GenerateName()
+                            naming.GenerateName(newName);
+
                             stats.GenerateStrength(newStrength);
                             stats.GenerateDexterity(newDexterity);
+
+                            profession.ChooseProfession()
                             break;
                         case 2:
                             break;
