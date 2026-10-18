@@ -23,7 +23,7 @@ namespace RandomCharactersGenerator
         Random random = new Random();
 
         //This method chooses a profession for the character.
-        public string ChooseProfession(int strength, int dexterity, int i, string profession, string specialAbility)
+        public string ChooseProfession(int strength, int dexterity, int i, string profession)
         {
             
             //We will choose profession by looking at which property is higher.
@@ -53,6 +53,26 @@ namespace RandomCharactersGenerator
                     profession = thief;
                     return profession;
                 }
+            }
+        }
+
+        //Chooses special ability for the character.
+        public string ChooseSpecialAbility(string profession, string specialAbility)
+        {
+            if ( profession == thief)
+            {
+                specialAbility = thiefAbility;
+                return specialAbility;
+            }
+            else if (profession == warrior)
+            {
+                specialAbility = warriorAbility;
+                return specialAbility;
+            }
+            else
+            {
+                specialAbility = "Error! Property not found.";
+                return specialAbility;
             }
         }
     }
