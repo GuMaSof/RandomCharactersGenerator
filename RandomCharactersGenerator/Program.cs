@@ -70,12 +70,19 @@
                             Console.WriteLine("Karaktärens snabbhet är " + newDexterity + ".");
                             Console.WriteLine("Karaktärens hälsopoäng är " + newHP + ".");
                             break;
+
                         case 2:
                             if (characterList.Count > 0)
                             {
-                                foreach
+                                foreach (var Character in characterList)
+                                {
+                                    Console.WriteLine();
+                                }
                             }
                             else
+                            {
+                                Console.WriteLine("Erorr! Listan är tom!");
+                            }
                             break;
                         case 3:
                             Console.WriteLine("Hejdå!");
