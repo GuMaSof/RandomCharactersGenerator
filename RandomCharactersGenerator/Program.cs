@@ -31,11 +31,13 @@
             //Here we begin to establish our menu structure.
             while (menuBool == true)
             {
+                Console.WriteLine("___________________________________");
                 Console.WriteLine("Välkommen till karaktärsgeneratorn!");
                 Console.WriteLine("Tryck [1] För att generera en ny karaktär.");
 
                 Console.WriteLine("Tryck [2] För att se alla karaktärer.");
                 Console.WriteLine("Tryck [3] För att stänga av menyn.");
+                Console.WriteLine("___________________________________");
 
                 //Here we insert the user input.
                 unConvertedInput = Console.ReadLine();
